@@ -1,0 +1,9 @@
+# Sanal ortam
+venv/
+
+# Derleme kalıntıları
+__pycache__/
+*.pyc
+
+# Kendi ayarların
+.env

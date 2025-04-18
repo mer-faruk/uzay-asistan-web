@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title> GPT Web Asistan </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>    
+
+<body>
+    <h2>👀 Uzay Asistan Demo 👀</h2>
+    <form method="POST">
+        <textarea name="mesaj" rows="5" cols="50" placeholder="Mesajınızı Yazınız"></textarea><br><br>
+        <button type="submit">Gönder</button>
+    </form>
+
+    {% if cevap %}
+    <h3>Asistanın Cevabı:</h3>
+    <p>{{ cevap }}</p>
+    {% endif %}   
+
+</body> 
+</html>
